@@ -18,16 +18,35 @@ body {
 
 /* || typography */
 
+/* The headers replacing the font[size=""] sections */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+/* font-size 7 is webpage title h1, 6 is the article title h2, and 5 is the subsections h3 */
 font[size="7"], font[size="6"], font[size="5"] {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
-}
-
+/* The main header (title) */
 font[size="7"] {
   font-size: 4rem;
   text-align: center;
@@ -35,26 +54,104 @@ font[size="7"] {
   text-shadow: 2px 2px 10px black;
 }
 
+/* article title h2 "The trouble with bears" */
 font[size="6"] {
   font-size: 3rem;
   text-align: center;
 }
 
+/* subection titles h3 "types of bear, habitats and eating, etc" */
 font[size="5"] {
   font-size: 2.2rem;
 }
 
-p, li, table {
+/* Paragraph content */
+p {
+  font-size: 1.6rem;
+  font-family: 'open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+/* The table contents */
+/*p,*/input, li, table, label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+/*p, */li, table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
+/* Table styling */
+
+table {
+  width: 100%;
+  background-color: #dde;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+th[scope="col"] {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #def;
+}
+
 /* || header layout */
+
+/* nav content */
+nav {
+  background-color: #FFFFFF;
+  height: 50px;
+  display: flex;
+  padding: 1% 0;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
 
 div[class="nav"], article, footer, .secondary {
   background-color: #FFFFFF;
 }
 
+/* The main paragraph content and the form text */
 article, footer, .secondary {
   padding: 10px 30px;
 }
@@ -135,29 +232,6 @@ footer {
   margin-top: 10px;
 }
 
-/* Table styling */
-
-table {
-  width: 100%;
-  background-color: #dde;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-}
-
-td {
-  text-align: center;
-}
-
-th[scope="col"] {
-  border-bottom: 1px solid black;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #def;
-}
 
 /* styling content images and audio */
 
