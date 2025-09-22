@@ -40,31 +40,6 @@ h3 {
   color: #2a2a2a;
 }
 
-/* font-size 7 is webpage title h1, 6 is the article title h2, and 5 is the subsections h3 */
-font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
-}
-
-/* The main header (title) */
-font[size="7"] {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
-}
-
-/* article title h2 "The trouble with bears" */
-font[size="6"] {
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* subection titles h3 "types of bear, habitats and eating, etc" */
-font[size="5"] {
-  font-size: 2.2rem;
-}
-
 /* Paragraph content */
 p {
   font-size: 1.6rem;
@@ -72,7 +47,6 @@ p {
   color: #2a2a2a;
 }
 
-/* The table contents */
 input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
@@ -105,6 +79,11 @@ th[scope="col"] {
 
 tbody tr:nth-child(odd) {
   background-color: #def;
+}
+
+caption {
+  font-size: 1.2rem;
+  color: black;
 }
 
 /* || header layout */
@@ -151,7 +130,6 @@ div[class="nav"], article, footer, .secondary {
   background-color: #FFFFFF;
 }
 
-/* The main paragraph content and the form text */
 article, footer, .secondary {
   padding: 10px 30px;
 }
@@ -160,42 +138,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
-  height: 50px;
-  background-color: ff80ff;
-  display: flex;
-  padding: 1% 0;
-  margin-bottom: 10px;
-}
-
-div[class="nav"] ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-div[class="nav"] li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-div[class="nav"] a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-div[class="nav"] .search {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2em;
-}
+/* Removed old nav styling (i.e. div[class="nav] */
 
 .search input {
   font-size: 1.6rem;
@@ -235,13 +178,6 @@ footer {
 
 /* styling content images and audio */
 
-/* Styles the download button for the audio */
-audio ~ a {
-  font-size: 1.6rem;
-  font-family: 'open Sans Condensed', sans-serif;
-  color: blue;
-}
-
 img, audio {
   display: block;
   margin: 0 auto;
@@ -249,6 +185,13 @@ img, audio {
 
 audio {
   width: 500px;
+}
+
+/* Styles the download link for the audio */
+audio ~ a {
+  font-size: 1.6rem;
+  font-family: 'open Sans Condensed', sans-serif;
+  color: blue;
 }
 
 /* Comments styling */
@@ -317,7 +260,7 @@ button:active {
 }
 
 .comment-form input[type="submit"], button {
-  background: #333;
+  background: #cc4444;
   border: 0;
   color: white;
 }
