@@ -39,8 +39,26 @@ To run the tests for the project, run the following command
    1. I made the images more accessible to screen readers by adding alt text and title names to each of the images.
 
    ## The Audio Player
+   1. To make the audio more accessible to deaf users, I added a text-transcript of the audio below the audio bar.
+
+   2. To make the audio more accessible to those using older browsers that don't support HTML audio, I gave the option to download the audio file.
+
+   ## The Forms
+   1. I added an aria-label tag that defines what the search bar will do for screen readers.
+
+   2. I unambiguously associated form's <input> elements text labels in the Comments section by replacing the <p> elements with <label> elements and adding a for="" to the labels.
+
+   ## The Show/Hide Comment Control
    1. 
 
 ```bash
 npm test
 ```
+
+## References
+
+Downloading an audio file found at "How do I add a download button to my audio file?" on Stack Overflow at https://stackoverflow.com/questions/76741783/how-do-i-add-a-download-button-to-my-audio-file
+
+Styling "Show comments" button on button-press found using Google AI overview.
+
+Found using 'for=""' in a <label> element on ChatGPT.

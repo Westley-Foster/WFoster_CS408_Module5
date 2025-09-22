@@ -73,12 +73,12 @@ p {
 }
 
 /* The table contents */
-/*p,*/input, li, table, label {
+input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
-/*p, */li, table {
+li, table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -235,6 +235,13 @@ footer {
 
 /* styling content images and audio */
 
+/* Styles the download button for the audio */
+audio ~ a {
+  font-size: 1.6rem;
+  font-family: 'open Sans Condensed', sans-serif;
+  color: blue;
+}
+
 img, audio {
   display: block;
   margin: 0 auto;
@@ -265,6 +272,9 @@ audio {
 
 .comment-form {
   margin-bottom: 3rem;
+  align-self: center;
+  flex: 2;
+  text-align: right;
 }
 
 .comment-form .flex-pair {
@@ -272,7 +282,7 @@ audio {
   padding: 0 3rem 1rem;
 }
 
-.comment-form label {
+.comment-form {
   align-self: center;
   flex: 2;
   text-align: right;
@@ -288,12 +298,25 @@ audio {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+/* Makes the "Show comments" a keyboard accessible button */
+button {
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+}
+
+/* On-button press found on Google's AI Overview */
+button:active {
+  transform: translateY(2px); /* Slight downward movement */
+  box-shadow: none; /* Remove shadow for a 'pressed in' look */
+}
+
+.comment-form input, .comment-form label, button {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
+.comment-form input[type="submit"], button {
   background: #333;
   border: 0;
   color: white;
