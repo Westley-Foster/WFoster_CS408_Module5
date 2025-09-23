@@ -35,9 +35,9 @@ Use test using the keyboard, screen readers, etc. to see if accessibility functi
    ## Semantic HTML
    1. When trying to navigate the webpage using the keyboard using the Tab and Enter keys, it functions properly just like the examples in the readings and module intro video.
 
-   2. I updated the article text to make it easier for screen reader users to navigate by removing all the font="" and <br> elements, replacing them with header elements (h1, h2, and h3) and updating the article text to be inside paragraph <p> elements.
+   2. I updated the article text to make it easier for screen reader users to navigate by removing all the font="" and '<br>' elements, replacing them with header elements (h1, h2, and h3) and updating the article text to be inside paragraph '<p>' elements.
 
-   3. The HTML semantic element that could be used to make the navigation menu more accessible is the <nav> element.
+   3. The HTML semantic element that could be used to make the navigation menu more accessible is to remove the '<div>' element and update it with the '<nav>' element.
 
    ## The Images
    1. I made the images more accessible to screen readers by adding alt text and title names to each of the images.
@@ -50,10 +50,10 @@ Use test using the keyboard, screen readers, etc. to see if accessibility functi
    ## The Forms
    1. I added an aria-label tag that defines what the search bar will do for screen readers.
 
-   2. I unambiguously associated form's <input> elements text labels in the Comments section by replacing the <p> elements with <label> elements and adding a for="" to the labels.
+   2. I unambiguously associated form's '<input>' elements text labels in the Comments section by replacing the '<p>' elements with '<label>' elements and adding a for="" to the labels.
 
    ## The Show/Hide Comment Control
-   1. To make the data table more accessible, I added a <caption> element and some <th scope="row"></th> and <th scope="col"></th> elements to better distinguish the table's contents.
+   1. To make the data table more accessible, I added a '<caption>' element and some '<th scope="row">' '</th>' and '<th scope="col">' '</th>' elements to better distinguish the table's contents.
 
    ## Other Considerations
    1. One idea for improvement that could make the site more accessible would be to add a show/hide button for the transcript for the audio. It would be more valuable especially if the transcript was much longer than it currently is.
@@ -66,6 +66,6 @@ Downloading an audio file found at "How do I add a download button to my audio f
 
 Styling "Show comments" button for button-press animation found using Google AI overview.
 
-Found using 'for=""' in a <label> element on ChatGPT.
+Found using 'for=""' in a '<label>' element on ChatGPT.
 
 Making a table more accessible found using ChatGPT.
